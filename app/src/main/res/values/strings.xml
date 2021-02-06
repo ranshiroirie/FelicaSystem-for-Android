@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FelicaSystem</string>
+
+    <string name="title_felica_device_read">Felicaデバイス読み取り</string>
+    <string name="title_osaihu_read">おサイフケータイ読み取り</string>
+    <string name="title_database">データベース管理</string>
+    <string name="title_account">アカウント管理</string>
+
+    <!--Bottomバーの文言-->
+    <string name="bottom_nav_button_title_felica_device_read">タッチ読取</string>
+    <string name="bottom_nav_button_title_osaihu_read">本体読取</string>
+    <string name="bottom_nav_button_title_database">データベース</string>
+    <string name="bottom_nav_button_title_account">アカウント</string>
+
+    <!--Felica情報バーの文言-->
+    <string name="felica_info_bar_title_device_name">デバイス名</string>
+    <string name="felica_info_bar_title_id">ID</string>
+    <string name="felica_info_bar_title_pmm">PMM</string>
+    <string name="felica_info_bar_title_sys">SYS</string>
+    <string name="felica_info_bar_title_type">種別</string>
+    <string name="felica_info_bar_title_registered_date">登録日</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

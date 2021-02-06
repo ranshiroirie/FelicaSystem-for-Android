@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_felica_device_read">
+
+    <fragment
+        android:id="@+id/nav_felica_device_read"
+        android:name="com.ranshiroirie.felicasystem.ui.felica_device_read.FelicaDeviceMainFragment"
+        android:label="@string/title_felica_device_read"
+        tools:layout="@layout/fragment_felica_device_read_main">
+        <action
+            android:id="@+id/action_felica_device_to_osaihu"
+            app:destination="@id/nav_osaihu_read"/>
+        <action
+            android:id="@+id/action_felica_device_to_databse"
+            app:destination="@id/nav_database"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_osaihu_read"
+        android:name="com.ranshiroirie.felicasystem.ui.osaihu_read.OsaihuReadMainFragment"
+        android:label="@string/title_osaihu_read"
+        tools:layout="@layout/fragment_osaihu_read_main" >
+        <action
+            android:id="@+id/action_osaihu_to_felica_device"
+            app:destination="@id/nav_felica_device_read"/>
+        <action
+            android:id="@+id/action_osaihu_to_database"
+            app:destination="@id/nav_database"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_database"
+        android:name="com.ranshiroirie.felicasystem.ui.database.DatabaseMainFragment"
+        android:label="@string/title_database"
+        tools:layout="@layout/fragment_database_main" />
+</navigation>

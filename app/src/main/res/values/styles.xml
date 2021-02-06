@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColor">@color/colorTextSub</item>
+
+        <!--ステータスバーのカラー設定-->
+        <item name="android:colorBackground">@color/colorBackgroundMain</item>
+        <item name="android:statusBarColor">@color/colorTextSub</item>
+    </style>
+
+    <!--Bottomバーのラベルの設定-->
+    <style name="bottom_nav_bar_icon_label" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!--Felica情報バーの背景色の設定-->
+    <style name="AppTheme.FelicaInfoBar.FelicaDevice" parent="AppTheme">
+        <item name="felica_info_bar_background_color">@color/colorGreenLight</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.OsaihuRead" parent="AppTheme">
+        <item name="felica_info_bar_background_color">@color/colorOrangeLight</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.Database" parent="AppTheme">
+        <item name="felica_info_bar_background_color">@color/colorPinkLight</item>
+    </style>
+
+    <!--Felica情報バーのラベルの設定-->
+    <style name="AppTheme.FelicaInfoBar.DisplayTextView" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/felica_info_bar_text_display_height</item>
+        <item name="android:text">@string/felica_info_bar_title_device_name</item>
+        <item name="android:textSize">@dimen/felica_info_bar_text_display_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Felica情報バーのデバイス名の設定-->
+    <style name="AppTheme.FelicaInfoBar.DeviceNameTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/felica_info_bar_device_name_text_height</item>
+        <item name="android:textSize">@dimen/felica_info_bar_device_name_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.DeviceNameTextView.FelicaDevice" parent="AppTheme.FelicaInfoBar.DeviceNameTextView">
+        <item name="android:textColor">@color/colorGreenPrimary</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.DeviceNameTextView.OsaihuRead" parent="AppTheme.FelicaInfoBar.DeviceNameTextView">
+        <item name="android:textColor">@color/colorOrangePrimary</item>
+    </style>
+
+    <!--Felica情報バーの情報テーブルの設定-->
+    <style name="AppTheme.FelicaInfoBar.TableRowLienarLayout" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/felica_info_bar_table_row_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Felica情報バーの情報テーブルの表示テキストの設定-->
+    <style name="AppTheme.FelicaInfoBar.InfoTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/felica_info_bar_info_text_height</item>
+        <item name="android:textSize">@dimen/felica_info_bar_info_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice" parent="AppTheme.FelicaInfoBar.InfoTextView">
+        <item name="android:textColor">@color/colorGreenPrimary</item>
+    </style>
+    <style name="AppTheme.FelicaInfoBar.InfoTextView.OsaihuRead" parent="AppTheme.FelicaInfoBar.InfoTextView">
+        <item name="android:textColor">@color/colorOrangePrimary</item>
+    </style>
+</resources>

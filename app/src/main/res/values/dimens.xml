@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+
+    <!--Bottomバーの寸法-->
+    <dimen name="bottom_nav_bar_radius">40dp</dimen>
+    <dimen name="bottom_nav_bar_height">75dp</dimen>
+    <dimen name="bottom_nav_bar_margin">10dp</dimen>
+    <dimen name="design_bottom_nav_bar_elevation">0dp</dimen>
+    <dimen name="bottom_nav_bar_elevation">8dp</dimen>
+    <dimen name="bottom_nav_bar_margin_horizontal">20dp</dimen>
+    <dimen name="bottom_nav_bar_margin_vertical">10dp</dimen>
+    <dimen name="bottom_nav_bar_icon_size">40dp</dimen>
+
+    <!--情報バーの寸法-->
+    <dimen name="felica_info_bar_radius">25dp</dimen>
+    <dimen name="felica_info_bar_height">190dp</dimen>
+    <dimen name="felica_info_bar_elevation">9dp</dimen>
+    <dimen name="felica_info_bar_margin_vertical">30dp</dimen>
+    <dimen name="felica_info_bar_margin_horizontal">@dimen/activity_horizontal_margin</dimen>
+    <dimen name="felica_info_bar_text_display_height">15dp</dimen>
+    <dimen name="felica_info_bar_text_display_size">12sp</dimen>
+    <dimen name="felica_info_bar_device_name_text_height">30dp</dimen>
+    <dimen name="felica_info_bar_device_name_text_size">24sp</dimen>
+    <dimen name="felica_info_bar_info_text_height">17dp</dimen>
+    <dimen name="felica_info_bar_info_text_size">16sp</dimen>
+    <dimen name="felica_info_bar_table_row_height">40dp</dimen>
+    <dimen name="felica_info_bar_table_margin_top">12dp</dimen>
+
+    <!--情報画面の戻るボタンの寸法-->
+    <dimen name="felica_info_back_button_size">50dp</dimen>
+    <dimen name="felica_info_back_button_margin_start">@dimen/activity_horizontal_margin</dimen>
+    <dimen name="felica_info_back_button_margin_bottom">115dp</dimen>
+    <dimen name="felica_info_back_button_radius">25dp</dimen>
+    <dimen name="felica_info_back_button_elevation">9dp</dimen>
+
+    <!--Bottomバーの各種寸法のデフォルトを書き換え-->
+    <dimen name="design_bottom_navigation_height">65dp</dimen>
+    <dimen name="design_bottom_navigation_margin">0dp</dimen>
+    <dimen name="design_bottom_navigation_item_max_width">80dp</dimen>
+    <dimen name="design_bottom_navigation_item_min_width">80dp</dimen>
+</resources>

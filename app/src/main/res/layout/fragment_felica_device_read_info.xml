@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.felica_device_read.FelicaDeviceReadInfoFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/felica_info_bar_height"
+        android:background="@drawable/shape_rounded_corners_felica_info_bar"
+        android:theme="@style/AppTheme.FelicaInfoBar.FelicaDevice"
+        android:elevation="@dimen/felica_info_bar_elevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/felica_info_bar_margin_vertical"
+            android:layout_marginHorizontal="@dimen/felica_info_bar_margin_horizontal"
+            android:orientation="vertical">
+            <TextView
+                style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                android:text="@string/felica_info_bar_title_device_name" />
+            <TextView
+                style="@style/AppTheme.FelicaInfoBar.DeviceNameTextView.FelicaDevice"
+                android:id="@+id/textView_felica_info_bar_device_name"
+                android:text="NO_DEVICE_NAME" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/felica_info_bar_table_margin_top">
+                <TableRow>
+                    <LinearLayout
+                        style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout">
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                            android:text="@string/felica_info_bar_title_id" />
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice"
+                            android:id="@+id/textView_felica_info_bar_id"
+                            android:text="FFFFFFFFFFFFFFFF" />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout">
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                            android:text="@string/felica_info_bar_title_pmm" />
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice"
+                            android:id="@+id/textView_felica_info_bar_pmm"
+                            android:text="FFFFFFFFFFFFFFFF" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow>
+                    <LinearLayout
+                        style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout"
+                            android:layout_weight="2">
+                            <TextView
+                                style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                                android:text="@string/felica_info_bar_title_sys" />
+                            <TextView
+                                style="@style/AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice"
+                                android:id="@+id/textView_felica_info_bar_sys"
+                                android:text="XXXX" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout"
+                            android:layout_weight="3">
+                            <TextView
+                                style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                                android:text="@string/felica_info_bar_title_type" />
+                            <TextView
+                                style="@style/AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice"
+                                android:id="@+id/textView_felica_info_bar_type"
+                                android:text="ICカード" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/AppTheme.FelicaInfoBar.TableRowLienarLayout">
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.DisplayTextView"
+                            android:text="@string/felica_info_bar_title_registered_date" />
+                        <TextView
+                            style="@style/AppTheme.FelicaInfoBar.InfoTextView.FelicaDevice"
+                            android:id="@+id/textView_felica_info_bar_reg_date"
+                            android:text="YYYY-MM-DD HH:MM" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_felica_device_read"
+        android:icon="@drawable/felica_device_bar_disactive"
+        android:title="@string/bottom_nav_button_title_felica_device_read" />
+
+    <item
+        android:id="@+id/nav_osaihu_read"
+        android:icon="@drawable/osaihu_bar_disactive"
+        android:title="@string/bottom_nav_button_title_osaihu_read" />
+
+    <item
+        android:id="@+id/nav_database"
+        android:icon="@drawable/database_bar_disactive"
+        android:title="@string/bottom_nav_button_title_database" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/account_bar_disactive"
+        android:title="@string/bottom_nav_button_title_account" />
+
+</menu>
